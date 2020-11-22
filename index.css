@@ -375,7 +375,7 @@ body:not(.user-is-tabbing) a:focus {
     display: inline-block;
     padding: 1rem 0;
     text-decoration: none;
-    color: inherit;
+    color: #4a6382;
     transition: all .2s;
 }
 
@@ -407,7 +407,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header {
     background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/nateHeader.jpg');
+        url('./images/headerBG.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
