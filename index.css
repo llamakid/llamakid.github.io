@@ -35,11 +35,14 @@
     --line-height-small: 1.2;
 
     --black: #000;
-    --pink: #ff3258;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
     --blue: #4a6382;
     --orange: #de7118;
+    --lightBlue: #a5def5;
+    --newOrange: #f26322;
+    --darkGray: #444444;
+    --lightGray: #b9b8b8;
 
 
     --container-max-width: 1180px;
@@ -72,9 +75,9 @@ body {
     font-size: var(--font-size-small);
     font-family: var(--font-stack);
     font-weight: 400;
-    color: var(--white-1);
+    color: var(--darkGray);
     line-height: var(--line-height-normal);
-    background: var(--blue);
+    background: var(--lightBlue);
     overflow-x: hidden;
 }
 
@@ -127,13 +130,14 @@ h3 {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     line-height: var(--line-height-small);
-    color: var(--white);
+    color: var(--darkGray);
 }
 
 .heading-primary {
     line-height: 1;
     font-size: var(--font-size-huge);
     font-weight: 400;
+    color: var(--white);
 }
 
 @media(max-width: 900px) {
@@ -152,7 +156,7 @@ h2::after {
     display: block;
     height: 2px;
     width: 10rem;
-    background: var(--orange);
+    background: var(--newOrange);
     margin: var(--gutter-small) 0;
 }
 
@@ -212,7 +216,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .link:hover {
-    color: var(--orange);
+    color: var(--newOrange);
 }
 
 .btn {
@@ -221,7 +225,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: 1rem 4.2rem;
     text-decoration: none;
     color: inherit;
-    border: 1px solid  var(--orange);
+    border: 1px solid  var(--newOrange);
     font-weight: 400;
 }
 
@@ -245,20 +249,20 @@ body:not(.user-is-tabbing) a:focus {
 .btn:hover::after,
 .btn:focus::after {
     right: 0;
-    background: var(--orange);
+    background: var(--newOrange);
 }
 
-.btn--pink {
-    background: var(--orange);
+.btn--orange {
+    background: var(--newOrange);
     transition: all 0.2s;
 }
 
-.btn--pink::after {
+.btn--orange::after {
     display: none;
 }
 
-.btn--pink:hover,
-.btn--pink:focus {
+.btn--orange:hover,
+.btn--orange:focus {
     background: transparent;
 }
 
@@ -268,7 +272,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: .6rem;
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px solid var(--orange);
+    border-bottom: 1px solid var(--newOrange);
 }
 
 .link__text::after {
@@ -291,7 +295,7 @@ body:not(.user-is-tabbing) a:focus {
 .link__text:hover::after,
 .link__text:focus:after {
     right: 0;
-    background: var(--orange);
+    background: var(--newOrange);
 }
 
 .link__text span {
@@ -310,7 +314,7 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
     height: 5.5rem;
     width: 5.5rem;
-    background-color: var(--orange);
+    background-color: var(--newOrange);
     border-radius: 50%;
     z-index: 10;
     visibility: hidden;
@@ -375,7 +379,7 @@ body:not(.user-is-tabbing) a:focus {
     display: inline-block;
     padding: 1rem 0;
     text-decoration: none;
-    color: #4a6382;
+    color: var(--white);
     transition: all .2s;
 }
 
@@ -392,13 +396,13 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .nav__link:hover {
-    color: var(--orange);
+    color: var(--newOrange);
 }
 
 .nav__link:hover::after {
     right: 0;
     height: 2px;
-    background: var(--orange);
+    background: var(--newOrange);
 }
 
 /* --------------------------------------- */
@@ -419,6 +423,7 @@ body:not(.user-is-tabbing) a:focus {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    color: var(--white);
 }
 
 .header__text p {
