@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Submit</title>
+        <link rel="stylesheet" type="text/css" href="./css/home.css">
+        <link rel="stylesheet" type="text/css" href="./css/submit.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <div class="left-nav">
+                    <a href="home.html"><img src="./images/preorder_perks_logo.png" alt="Preorder Perks Logo" class="logo"></a>
+
+                    <div class="socialIcons">
+                        <a href="https://www.instagram.com/preorderperks/"><img src="./images/ig-icon.png" alt="Instagram" class="social-icon"></a>
+                        <a href="https://www.instagram.com/preorderperks/"><img src="./images/yt-icon.png" alt="Twitter" class="social-icon"></a>
+                        <a href="https://www.instagram.com/preorderperks/"><img src="./images/email-icon.png" alt="Facebook" class="social-icon"></a>
+                    </div>
+
+                    <div class="left-nav-buttons">
+                        <a href="./home.html" class="button nav-item filterButton" >FILTER BOOKS</a>
+                        <a href="./submit.html" class="button nav-item">ADD A PERK</a>
+                        <a href="#" class="button nav-item">CONTACT US</a>
+                        <a href="./subscribe.html" class="button nav-item">SUBSCRIBE</a>
+                    </div>
+                </div>
+                <div class="content-right">
+
+                    <div class="top-banner-ad">
+                        <img src="./images/top-banner-ad.png" alt="Top Banner Ad" class="top-banner-ad">
+                    </div>
+                    <div class="right-banner-ad">
+                        <img src="./images/right-banner-ad.png" alt="Right Banner Ad" class="right-banner-ad">
+                    </div>
+                    
+                    <div class="book-covers-container">
+                        
+                        <div class="book-form-card">
+                            <form>
+                              <h2>Add a Perk</h2>
+
+                              <label>Name:</label>
+                              <input type="text" name="Name" required>
+
+                              <label>Email:</label>
+                              <input type="email" name="email" required>
+                          
+                              <label>Book Cover:</label>
+                              <input type="file" name="cover" accept="image/*">
+                          
+                              <label>Title:</label>
+                              <input type="text" name="title" required>
+                          
+                              <label>Author:</label>
+                              <input type="text" name="author" required>
+                          
+                              <label>Release Date:</label>
+                              <input type="date" name="release" required>
+                          
+                              <label>Publisher:</label>
+                              <input type="text" name="publisher">
+                          
+                              <label>Genre:</label>
+                              <input type="text" name="genre">
+                          
+                              <label>Perks End Date:</label>
+                              <input type="date" name="perksEnd">
+                          
+                              <label>Perks (one per line):</label>
+                              <textarea name="perks" rows="4" placeholder="e.g.\nSigned bookplate\nSticker set\nBonus story"></textarea>
+
+                              <label>
+                                Promote Perk:
+                                <input type="checkbox" id="promotePerkCheckbox" onchange="togglePriceTiers()" />
+                                  Yes
+                              </label>
+
+                              <!-- Hidden Price Tier Checkboxes -->
+                              <div id="priceTiers" style="display: none; margin-top: 10px; padding-left: 20px;">
+                                <label><input type="checkbox" name="tier" value="5" /> $5 - Basic</label><br />
+                                <label><input type="checkbox" name="tier" value="15" /> $15 - Featured</label><br />
+                                <label><input type="checkbox" name="tier" value="30" /> $30 - Premium</label>
+                              </div>
+                          
+                              <button type="submit">Add Book</button>
+                            </form>
+                          </div>
+                          
+
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

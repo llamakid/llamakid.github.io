@@ -4,74 +4,154 @@
         <meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Preorder Perks</title>
+        <title>PREORDER PERKS</title>
         <link rel="stylesheet" type="text/css" href="./css/home.css">
     </head>
     <body>
         <div class="container">
             <div class="content">
                 <div class="left-nav">
-                    <a href="./home-black.html"><img src="./images/logoGold.png" alt="Preorder Perks Logo" class="logo"></a>
+                    <a href="home.html"><img src="./images/preorder_perks_logo.png" alt="Preorder Perks Logo" class="logo"></a>
+
+                    <div class="socialIcons">
+                        <a href="https://www.instagram.com/preorderperks/"><img src="./images/ig-icon.png" alt="Instagram" class="social-icon"></a>
+                        <a href="https://www.instagram.com/preorderperks/"><img src="./images/yt-icon.png" alt="Twitter" class="social-icon"></a>
+                        <a href="https://www.instagram.com/preorderperks/"><img src="./images/email-icon.png" alt="Facebook" class="social-icon"></a>
+                    </div>
 
                     <div class="left-nav-buttons">
-                        <a href="#" class="button">Home</a>
-                        <a href="#" class="button">How it works</a>
-                        <a href="#" class="button">Contact</a>
+                        <a href="#" class="button nav-item filterButton left-nav-item" onclick="toggleFilter()">FILTER BOOKS</a>
+
+                        <div id="filter-panel" class="filter-panel">
+                          <!-- Example genre filter list -->
+                          <label><input type="checkbox" name="genre" value="biography"> Biography</label>
+                          <label><input type="checkbox" name="genre" value="business"> Business</label>
+                          <label><input type="checkbox" name="genre" value="childrens"> Childrens</label>
+                          <label><input type="checkbox" name="genre" value="fantasy"> Fantasy</label>
+                          <label><input type="checkbox" name="genre" value="horror"> Horror</label>
+                          <label><input type="checkbox" name="genre" value="mystery"> Mystery</label>
+                          <label><input type="checkbox" name="genre" value="other"> Other</label>
+                          <label><input type="checkbox" name="genre" value="romance"> Romance</label>
+                          <label><input type="checkbox" name="genre" value="science fiction"> Science Fiction</label>
+                          <label><input type="checkbox" name="genre" value="self help"> Self Help</label>
+                          <label><input type="checkbox" name="genre" value="young adult"> Young Adult</label>
+                        </div>
+                        
+                        <a href="./submit.html" class="button nav-item left-nav-item">ADD A PERK</a>
+                        <a href="#" class="button nav-item left-nav-item">CONTACT US</a>
+                        <a href="./subscribe.html" class="button nav-item left-nav-item">SUBSCRIBE</a>
                     </div>
                 </div>
                 <div class="content-right">
-                    <div class="book-covers-container">
-                        <img src="./images/bookCover1.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/emily-deep-valley.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/feel-good.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/hard-thing.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/hope-valley.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/james.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/secret-garden.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/startup-you.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/bookCover1.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/emily-deep-valley.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/feel-good.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/hard-thing.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/hope-valley.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/james.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/secret-garden.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/startup-you.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/bookCover1.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/emily-deep-valley.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/feel-good.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/hard-thing.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/hope-valley.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/james.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/secret-garden.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/startup-you.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/bookCover1.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/emily-deep-valley.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/feel-good.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/hard-thing.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/hope-valley.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/james.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/secret-garden.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/startup-you.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/bookCover1.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/emily-deep-valley.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/feel-good.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/hard-thing.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/hope-valley.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/james.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/secret-garden.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/startup-you.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/bookCover1.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/emily-deep-valley.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/feel-good.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/hard-thing.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/hope-valley.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/james.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/secret-garden.jpg" alt="Book Cover 1" class="book-cover">
-                        <img src="./images/startup-you.jpg" alt="Book Cover 1" class="book-cover">
+                    <div class="top-banner-ad">
+                        <img src="./images/top-banner-ad.png" alt="Top Banner Ad" class="top-banner-ad">
                     </div>
+                    <div class="right-banner-ad">
+                        <img src="./images/right-banner-ad.png" alt="Right Banner Ad" class="right-banner-ad">
+                    </div>
+
+                    <div class="book-covers-container">
+
+                      <p id="no-results" class="no-results" style="display: none;">No books match your selected filters.</p>
+                        
+                      <div class="book-card" data-genre="young adult">
+                        <img src="./images/book-1.png" alt="Book 1">
+                        <div class="book-info">
+                          <h3>The Scorpion and the Night Blossom</h3>
+                          <p>by Amélie Wen Zhao</p>
+                          <p><strong>Release:</strong> March 4, 2025</p>
+                          <button onclick="showDetails(0)" class="preorder-btn">Learn More</button>
+                        </div>
+                      </div>
+                    
+                      <div class="book-card" data-genre="young adult">
+                        <img src="./images/book-2.png" alt="Book 2">
+                        <div class="book-info">
+                          <h3>Dawn and Dust</h3>
+                          <p>by Hayley Whiteley</p>
+                          <p><strong>Release:</strong> March 10, 2025</p>
+                          <button onclick="showDetails(1)" class="preorder-btn">Learn More</button>
+                        </div>
+                      </div>
+
+                      <div class="book-card" data-genre="other">
+                        <img src="./images/book-3.png" alt="Book 3">
+                        <div class="book-info">
+                          <h3>Mama Needs a Minute!</h3>
+                          <p>by Mary Catherine Starr</p>
+                          <p><strong>Release:</strong> March 11, 2025</p>
+                          <button onclick="showDetails(2)" class="preorder-btn">Learn More</button>
+                        </div>
+                      </div>
+
+                      <div class="book-card" data-genre="romance">
+                        <img src="./images/book-4.png" alt="Book 4">
+                        <div class="book-info">
+                          <h3>An Overdue Match</h3>
+                          <p>by Sarah Monzon</p>
+                          <p><strong>Release:</strong> February 18, 2025</p>
+                          <button onclick="showDetails(3)" class="preorder-btn">Learn More</button>
+                        </div>
+                      </div>
+
+                      <div class="book-card" data-genre="young adult">
+                        <img src="./images/book-5.png" alt="Book 1">
+                        <div class="book-info">
+                          <h3>The Scorpion and the Night Blossom</h3>
+                          <p>by Amélie Wen Zhao</p>
+                          <p><strong>Release:</strong> March 4, 2025</p>
+                          <button onclick="showDetails(4)" class="preorder-btn">Learn More</button>
+                        </div>
+                      </div>
+                    
+                      <div class="book-card" data-genre="young Adult">
+                        <img src="./images/book-6.png" alt="Book 2">
+                        <div class="book-info">
+                          <h3>Dawn and Dust</h3>
+                          <p>by Hayley Whiteley</p>
+                          <p><strong>Release:</strong> March 10, 2025</p>
+                          <button onclick="showDetails(5)" class="preorder-btn">Learn More</button>
+                        </div>
+                      </div>
+
+                      <div class="book-card" data-genre="young Adult">
+                        <img src="./images/book-7.png" alt="Book 3">
+                        <div class="book-info">
+                          <h3>Mama Needs a Minute!</h3>
+                          <p>by Mary Catherine Starr</p>
+                          <p><strong>Release:</strong> March 11, 2025</p>
+                          <button onclick="showDetails(6)" class="preorder-btn">Learn More</button>
+                        </div>
+                      </div>
+
+                      <div class="book-card" data-genre="other">
+                        <img src="./images/book-8.png" alt="Book 4">
+                        <div class="book-info">
+                          <h3>An Overdue Match</h3>
+                          <p>by Sarah Monzon</p>
+                          <p><strong>Release:</strong> February 18, 2025</p>
+                          <button onclick="showDetails(7)" class="preorder-btn">Learn More</button>
+                        </div>
+                      </div>
+                    
+                      <!-- Add more .book-card elements -->
+                      
+                      <!-- Modal -->
+                      <div id="modal" class="modal">
+                        <div class="modal-content" id="modal-content">
+                          <span class="close-button" onclick="closeModal()">&times;</span>
+                          <!-- Book card will be injected here -->
+                        </div>
+                      </div>
+
+                    </div>
+
+                    
+                    
                 </div>
             </div>
         </div>
+
+        <script src="./js/main.js"></script>
     </body>
 </html>
