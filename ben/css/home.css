@@ -424,3 +424,31 @@ label {
   margin-top: 20px;
   font-family: 'Manrope', sans-serif;
 }
+
+.contact-header {
+  position: relative;
+  top: 20%;
+  left: 10%;
+  width: 70%;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Manrope', sans-serif;
+}
+
+.contact-container {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 82%;
+  height: 100%;
+}
