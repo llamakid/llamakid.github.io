@@ -17,7 +17,7 @@
                     <div class="socialIcons">
                         <a href="https://www.instagram.com/preorderperks/"><img src="./images/ig-icon.png" alt="Instagram" class="social-icon"></a>
                         <a href="https://www.instagram.com/preorderperks/"><img src="./images/yt-icon.png" alt="Twitter" class="social-icon"></a>
-                        <a href="https://www.instagram.com/preorderperks/"><img src="./images/email-icon.png" alt="Facebook" class="social-icon"></a>
+                        <a href="mailto:emailaddress@whatever.com"><img src="./images/email-icon.png" alt="Facebook" class="social-icon"></a>
                     </div>
 
                     <div class="left-nav-buttons">
@@ -30,13 +30,13 @@
                 <div class="content-right">
 
                     <div class="top-banner-ad">
-                        <img src="./images/top-banner-ad.png" alt="Top Banner Ad" class="top-banner-ad">
+                        <a href="https://storychasers.com" ><img src="./images/1-1.png" alt="Top Banner Ad" class="top-banner-ad"></a>
                     </div>
                     <div class="right-banner-ad">
-                        <img src="./images/right-banner-ad.png" alt="Right Banner Ad" class="right-banner-ad">
+                        <a href="https://storychasers.com" ><img src="./images/1.png" alt="Right Banner Ad" class="right-banner-ad"></a>
                     </div>
                     
-                    <div class="book-covers-container">
+                    <div class="book-covers-container-submit">
                         
                         <div class="book-form-card">
                             <form>
@@ -64,31 +64,54 @@
                               <input type="text" name="publisher">
                           
                               <label>Genre:</label>
-                              <input type="text" name="genre">
+                              <select name="genre" id="genre">
+                                <option value="" disabled selected>Select Genre</option>
+                                <option value="biography">Biography</option>
+                                <option value="business">Business</option>
+                                <option value="mhildrens">Childrens</option>
+                                <option value="fantasy">Fantasy</option>
+                                <option value="horror">Horror</option>
+                                <option value="mystery">Mystery</option>
+                                <option value="non fiction">Non Fiction</option>
+                                <option value="romance">Romance</option>
+                                <option value="science fiction">Science Fiction</option>
+                                <option value="self help">Self Help</option>
+                                <option value="young adult">Young Adult</option>
+                                <option value="other">Other</option>
+                              </select>
                           
                               <label>Perks End Date:</label>
                               <input type="date" name="perksEnd">
                           
-                              <label>Perks (one per line):</label>
-                              <textarea name="perks" rows="4" placeholder="e.g.\nSigned bookplate\nSticker set\nBonus story"></textarea>
+                              <label>Perks:</label>
+                              <textarea name="perks" rows="4" placeholder="e.g.Signed book plate, Sticker set, Bonus story"></textarea>
+
+                              <label>Website:</label>
+                              <input type="text" name="website">
 
                               <label>
-                                Promote Perk:
+                                Interested in Paid Promotions?:
                                 <input type="checkbox" id="promotePerkCheckbox" onchange="togglePriceTiers()" />
                                   Yes
                               </label>
 
                               <!-- Hidden Price Tier Checkboxes -->
                               <div id="priceTiers" style="display: none; margin-top: 10px; padding-left: 20px;">
-                                <label><input type="checkbox" name="tier" value="5" /> $5 - Basic</label><br />
-                                <label><input type="checkbox" name="tier" value="15" /> $15 - Featured</label><br />
-                                <label><input type="checkbox" name="tier" value="30" /> $30 - Premium</label>
+                                <label><input type="checkbox" name="tier" value="5" /> Banner Ad</label><br />
+                                <label><input type="checkbox" name="tier" value="15" /> Featured Book</label><br />
                               </div>
                           
                               <button type="submit">Add Book</button>
                             </form>
-                          </div>
+                        </div>
                           
+                        <div class="descriptions">
+                            <h2 class="bold">Promote your Perk</h2>
+                            <p><span class="bold">BANNER AD</span> ( up to 30 Days ) = $250 <br/><br/>Promote your book with one of our vertical or horizontal banner ads</p>
+                            <img src="./images/banner-ads.png" alt="Vertical Ad" class="example-image"><br/><br/>
+                            <p><span class="bold">FEATURED BOOK </span> ( Up to 30 Days ) = $100 <br/><br/>Promote your book for up to one month with a gold call-out background</p>
+                            <img src="./images/featured-perk.png" alt="Vertical Ad" class="example-image">
+                        </div>  
 
                     </div>
 

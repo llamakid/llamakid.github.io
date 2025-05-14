@@ -49,7 +49,7 @@ label {
 
 .left-nav-buttons {
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 10%;
     width: 100%;
     height: auto;
@@ -118,6 +118,14 @@ label {
   height: 450px;
   overflow: hidden;
   transition: transform 0.3s ease;
+}
+
+.book-card .highlighted {
+  background-color: #dfcea9;
+}
+
+.highlighted {
+  background-color: #dfcea9;
 }
 
 .book-card:hover {
@@ -208,11 +216,19 @@ label {
     position: absolute;
     width: 90%;
     height: auto;
-    top: 15%;
+    top: 20%;
     left: 0%;
     display: flex;
     justify-content: center;
     gap: 10px;
+}
+
+.socialIcons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    transition: transform 0.3s ease;
 }
 
 .social-icon {
@@ -228,17 +244,17 @@ label {
 .top-banner-ad {
     position: absolute;
     top: 0;
-    left: 10%;
-    width: 70%;
-    height: 40%;
+    left: 8%;
+    width: 73%;
+    height: 36%;
     align-items: center;
 }
 
 .right-banner-ad {
     position: absolute;
-    top: 10%;
+    top: 12%;
     right: 0;
-    width: 40%;
+    width: 34%;
     height: 80%;
 }
 
@@ -451,4 +467,12 @@ label {
   right: 0;
   width: 82%;
   height: 100%;
+}
+
+.book-card .highlighted {
+  background-color: #dfcea9;
+}
+
+.highlighted {
+  background-color: #dfcea9;
 }

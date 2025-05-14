@@ -21,9 +21,19 @@ html {
     position: absolute;
     top: 0;
     left: 0;
-    width: 25%;
+    width: 20%;
     height: 100%;
     background-color: #f0f0f0;
+    text-align: center;
+}
+
+.content-left-black {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-color: black;
     text-align: center;
 }
 
@@ -31,7 +41,7 @@ html {
     position: absolute;
     top: 0;
     right: 0;
-    width: 75%;
+    width: 80%;
     height: 100%;
 }
 
@@ -45,16 +55,34 @@ html {
 
 .content-left-text {
     position: absolute;
-    bottom: 10%;
+    bottom: 20%;
     left: 10%;
-    width: 80%;
+    width: 70%;
     height: auto;
-    font-size: 2em;
+    font-size: 3em;
     text-align: left;
     font-family: 'manrope';
+    line-height: 80px;
     /* color: #BC5A26; */
     color: black;
     text-align: center;
+    font-weight: 600;
+}
+
+.content-left-text-black {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    width: 70%;
+    height: auto;
+    font-size: 3em;
+    text-align: left;
+    font-family: 'manrope';
+    line-height: 80px;
+    /* color: #BC5A26; */
+    color: white;
+    text-align: center;
+    font-weight: 600;
 }
 
 .content-left-buttons {
@@ -65,11 +93,12 @@ html {
     font-family: 'manrope', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 3em;
     font-weight: 700;
+    width: 100%;
 }
 
 .content-left-buttons a {
-    color: #BC5A26;
-    text-decoration: underline;
+    color: white;
+    text-decoration: none;
 }
 
 .content-left-buttons a:hover {
@@ -83,4 +112,18 @@ html {
     top: 0;
     left: 0;
     object-fit: cover;
+}
+
+.button {
+    background-color: #BC5A26;
+    color: white;
+    border: none;
+    padding: 20px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
 }

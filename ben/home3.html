@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Preorder Perks</title>
+        <link rel="stylesheet" type="text/css" href="./css/home3.css">
+        <script src="./js/main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <div class="left-nav">
+                    <a href="index.html"><img src="./images/preorder_perks_logo.png" alt="Preorder Perks Logo" class="logo"></a>
+
+                    <div class="socialIcons">
+                        <a href="https://www.instagram.com/preorderperks/"><img src="./images/ig-icon.png" alt="Instagram" class="social-icon"></a>
+                        <a href="https://www.instagram.com/preorderperks/"><img src="./images/twt-icon.png" alt="Twitter" class="social-icon"></a>
+                        <a href="https://www.instagram.com/preorderperks/"><img src="./images/fb-icon.png" alt="Facebook" class="social-icon"></a>
+                    </div>
+
+                    <div class="left-nav-buttons">
+                        <a href="#" class="button">Filter</a>
+                        <a href="#" class="button">Add a Perk</a>
+                        <a href="#" class="button">Contact</a>
+                        <a href="#" class="button">Subscribe</a>
+                    </div>
+                </div>
+                <div class="content-right">
+                    <div class="top-banner-ad">
+                        <img src="./images/top-banner-ad.png" alt="Top Banner Ad" class="top-banner-ad">
+                    </div>
+                    <div class="right-banner-ad">
+                        <img src="./images/right-banner-ad.png" alt="Right Banner Ad" class="right-banner-ad">
+                    </div>
+                    <div class="book-covers-container">
+
+                        <div class="cover-grid">
+                          <img src="./images/book-1.png" alt="Book 1" class="cover" onclick="showDetails(0)">
+                          <img src="./images/book-2.png" alt="Book 2" class="cover" onclick="showDetails(1)">
+                          <img src="./images/book-3.png" alt="Book 3" class="cover" onclick="showDetails(2)">
+                          <img src="./images/book-4.png" alt="Book 4" class="cover" onclick="showDetails(3)">
+                          <img src="./images/book-5.png" alt="Book 5" class="cover" onclick="showDetails(4)">
+                          <img src="./images/book-6.png" alt="Book 6" class="cover" onclick="showDetails(5)">
+                          <img src="./images/book-7.png" alt="Book 7" class="cover" onclick="showDetails(6)">
+                          <img src="./images/book-8.png" alt="Book 8" class="cover" onclick="showDetails(7)">
+                        </div>
+
+                        <div id="modal" class="modal">
+                          <div class="modal-content" id="modal-content">
+                            <span class="close-button" onclick="closeModal()">&times;</span>
+                            <!-- Book card will be injected here -->
+                          </div>
+                        </div>
+                        
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
