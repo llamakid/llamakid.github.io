@@ -244,9 +244,9 @@ label {
 .top-banner-ad {
     position: absolute;
     top: 0;
-    left: 8%;
-    width: 73%;
-    height: 36%;
+    left: 10%;
+    width: 600px;
+    height: 120px;
     align-items: center;
 }
 
@@ -254,8 +254,8 @@ label {
     position: absolute;
     top: 12%;
     right: 0;
-    width: 34%;
-    height: 80%;
+    width: 120px;
+    height: 600px;
 }
 
 .scroll-row {
@@ -475,4 +475,20 @@ label {
 
 .highlighted {
   background-color: #dfcea9;
+}
+
+.clear-filters {
+  background-color: #b25f36; /* similar warm brown */
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 32px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.emailColor {
+  color: #b25f36;
 }

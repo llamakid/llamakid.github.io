@@ -128,36 +128,43 @@ function toggleFilter() {
 }
 
 document.querySelectorAll('input[name="genre"]').forEach(checkbox => {
-    checkbox.addEventListener('change', filterBooks);
+  checkbox.addEventListener('change', filterBooks);
+});
+
+document.getElementById("clear-filters").addEventListener("click", () => {
+  document.querySelectorAll('input[name="genre"]').forEach(checkbox => {
+    checkbox.checked = false;
   });
-  
+  filterBooks();
+});
+
 function filterBooks() {
-    const selectedGenres = Array.from(document.querySelectorAll('input[name="genre"]:checked'))
+  const selectedGenres = Array.from(document.querySelectorAll('input[name="genre"]:checked'))
     .map(cb => cb.value);
 
-    const cards = document.querySelectorAll(".book-card");
-        let visibleCount = 0;
+  const cards = document.querySelectorAll(".book-card");
+  let visibleCount = 0;
 
-    cards.forEach(card => {
-        const cardGenres = card.dataset.genre.split(",").map(g => g.trim());
-        const matches = selectedGenres.length === 0 || selectedGenres.some(genre => cardGenres.includes(genre));
+  cards.forEach(card => {
+    const cardGenres = card.dataset.genre.split(",").map(g => g.trim());
+    const matches = selectedGenres.length === 0 || selectedGenres.some(genre => cardGenres.includes(genre));
 
-        if (matches) {
-            card.classList.remove("fade-out");
-            card.classList.add("fade-in");
-            card.style.display = "block";
-            visibleCount++;
-        } else {
-            card.classList.remove("fade-in");
-            card.classList.add("fade-out");
-            setTimeout(() => (card.style.display = "none"), 300); // after fade
-        }
-    });
+    if (matches) {
+      card.classList.remove("fade-out");
+      card.classList.add("fade-in");
+      card.style.display = "block";
+      visibleCount++;
+    } else {
+      card.classList.remove("fade-in");
+      card.classList.add("fade-out");
+      setTimeout(() => (card.style.display = "none"), 300);
+    }
+  });
 
-    // Show or hide "no results" message
-    const noResults = document.getElementById("no-results");
-    noResults.style.display = visibleCount === 0 ? "block" : "none";
+  const noResults = document.getElementById("no-results");
+  noResults.style.display = visibleCount === 0 ? "block" : "none";
 }
+
 
 function togglePriceTiers() {
     const checkbox = document.getElementById("promotePerkCheckbox");

@@ -17,6 +17,13 @@ html {
     src: url(../fonts/Manrope-VariableFont_wght.ttf);
 }
 
+@font-face {
+      font-family: "Gill-Sans-Bold-Italic";
+      src: url("../fonts/Gill Sans Bold Italic.otf") format("otf");
+      font-style: italic;
+      font-weight: bold; /* Or your desired weight */
+    }
+
 .content-left {
     position: absolute;
     top: 0;
@@ -65,23 +72,23 @@ html {
     line-height: 80px;
     /* color: #BC5A26; */
     color: black;
-    text-align: center;
+    text-align: left;
     font-weight: 600;
 }
 
 .content-left-text-black {
     position: absolute;
-    bottom: 20%;
+    bottom: 23%;
     left: 10%;
     width: 70%;
     height: auto;
     font-size: 3em;
     text-align: left;
     font-family: 'manrope';
-    line-height: 80px;
+    font-style: italic;
+    line-height: 75px;
     /* color: #BC5A26; */
     color: white;
-    text-align: center;
     font-weight: 600;
 }
 
