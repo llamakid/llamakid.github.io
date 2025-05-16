@@ -82,7 +82,7 @@ label {
   top: 20%;
   left: 0;
   width: 83%;
-  max-height: 80%;
+  max-height: 78%;
   overflow-y: auto;
   overflow-x: hidden; 
   display: flex;
@@ -243,19 +243,19 @@ label {
 
 .top-banner-ad {
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 10%;
-    width: 600px;
-    height: 120px;
+    width: 620px;
+    height: 140px;
     align-items: center;
 }
 
 .right-banner-ad {
     position: absolute;
     top: 12%;
-    right: 0;
-    width: 120px;
-    height: 600px;
+    right: 10px;
+    width: 140px;
+    height: 620px;
 }
 
 .scroll-row {
@@ -481,10 +481,10 @@ label {
   background-color: #b25f36; /* similar warm brown */
   color: white;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 13px;
   border: none;
   border-radius: 10px;
-  padding: 12px 32px;
+  padding: 5px 15px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
